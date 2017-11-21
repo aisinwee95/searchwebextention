@@ -21,6 +21,8 @@ body {
   background-repeat: repeat !important;
   background-attachment: fixed;
   position:static;
+  width: 500px;
+  
 }
 
 .btn-default:hover {
@@ -209,12 +211,18 @@ div.equal:active {
   font-weight: bold;
 }</style>
   <body class="default_popup" id="popup1">
- 
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
  <a class="close" href="#popup1">×</a>
+ <h3 class="navbar-brand">Search Across Tabs & Calculator</h3>
+ </div>
+</div>
+</nav>
     <div class="container">
       
-      <h3>Find Across Tabs & Calculator</h3>
-      <p>Search across all the tabs and highlight the results in those tabs.</p>
+      
+      <p>Search and Highlight the Results in Those Tabs:</p>
       <form id="find-form">   
       <div class="input-group" >
       <input type="text" class="form-control" id="find-input" placeholder="Search for...">
