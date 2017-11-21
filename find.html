@@ -76,10 +76,10 @@ html {
 	margin: 100px auto;
 	padding: 20px 20px 9px;
 	
-	background: #9dd2ea;
-	background: linear-gradient(#9dd2ea, #8bceec);
+	background: #fff0b3;
+	background: linear-gradient(#fff0b3, #8bceec);
 	border-radius: 3px;
-	box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 4px #fff0b3, 0px 10px 15px rgba(0, 0, 0, 0.2);
   padding: 20px;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
@@ -129,15 +129,17 @@ background: rgba(0, 0, 0, 0.2);
   padding: 10px;
   margin: 20px 4px 10px 0;
   cursor: pointer;
+  box-shadow:0px 4px rgba(0,0,0,0.2);
   background-color: #FFF0F5;
   transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
 }
 
 .operators div:hover {
-  background-color: #ddd;
+  background-color: #ffff80;
+  
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-color: #aaa;
+  box-shadow: 0px 1px 4px 0px #ffff80;
+  border-color: #ffff80;
 }
 
 .operators div:active {
@@ -157,20 +159,28 @@ background: rgba(0, 0, 0, 0.2);
   padding: 10px;
   margin: 10px 4px 10px 0;
   cursor: pointer;
+  box-shadow:0px 4px rgba(0,0,0,0.2);
   background-color: #f9f9f9;
   transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
 }
 
 .numbers div:hover {
-  background-color: #f1f1f1;
+  background-color: #e6ffff;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-color: #bbb;
+  box-shadow: 0px 1px 4px 0px #e6ffff;
+  border-color: #e6ffff;
+}
+.numbers #clear div:hover {
+  background-color: #ff9fa8;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px #ff9fa8;
+  border-color: #ff9fa8;
 }
 
 .numbers div:active {
   font-weight: bold;
 }
+
 
 div.equal {
   display: inline-block;
@@ -183,6 +193,7 @@ div.equal {
   vertical-align: top;
   cursor: pointer;
   color: #FFF;
+  box-shadow:0px 4px rgba(0,0,0,0.2);
   background-color: #4d90fe;
   transition: all .2s ease-in-out;
 }
@@ -256,7 +267,7 @@ div.equal:active {
       <div class="numbers">
         <div>0</div>
         <div>.</div>
-        <div id="clear">C</div>
+        <div id="clear" style="background-color: #ff9fa8;box-shadow:0px 4px #ff7c87;border-color: #ff9fa8;color:white">C</div>
       </div>
     </div>
     <div class="equal" id="result">=</div>
