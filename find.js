@@ -26,7 +26,7 @@ function handleMessage(request, sender, response) {
     // List out responses from the background page as they come in.
     let li = document.createElement("li");
     
-    li.innerHTML = `<table width=‘500’ ><tr><td>${request.id}&nbsp;&nbsp;</td><td style="width:100%"><a href=${request.url}>${request.url}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td><td style="width:100%">${request.count} hits.</td><br/></tr></table>`;
+    li.innerHTML = `<table width=‘500’ ><tr><td>&nbsp;&nbsp;</td><td style="width:100%"><a href=${request.url}>${request.url}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td><td style="width:100%">${request.count} hits.&nbsp;&nbsp;</td><br/></tr></table>`;
 
     
     results.appendChild(li);
